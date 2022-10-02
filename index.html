@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ghost</title>
+</head>
+<body>
+    <div class="main-nav">
+        <h1 class="logo">GHOST</h1>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Recommended</a></li>
+            <li><a href="#">Lots</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search product name here.."
+          />
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Furniture')">
+            Furniture
+          </button>
+          <button class="button-value" onclick="filterProduct('Clothing')">
+            Clothing
+          </button>
+          <button class="button-value" onclick="filterProduct('Accesories')">
+            Accesories
+          </button>
+          <button class="button-value" onclick="filterProduct('Watch')">
+            Watch
+          </button>
+        </div>
+        <div id="products"></div>
+      </div>
+      <!-- Script -->
+      <script src="app.js"></script>
+    
+</body>
+</html>
