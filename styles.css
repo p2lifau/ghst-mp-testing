@@ -8,7 +8,7 @@ body {
 .main-nav {
   position: sticky;
   top: 0;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(36, 35, 35);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,26 +45,26 @@ body {
   padding: 1em 0.3em;
 }
 #search-container input:focus {
-  border-bottom-color: #6759ff;
+  border-bottom-color: #333;
 }
 #search-container button {
   padding: 1em 2em;
   margin-left: 1em;
-  background-color: #6759ff;
+  background-color: #333;
   color: #ffffff;
   border-radius: 5px;
   margin-top: 0.5em;
 }
 .button-value {
-  border: 2px solid #6759ff;
+  border: 2px solid #333;
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
-  color: #6759ff;
+  color: #333;
   cursor: pointer;
 }
 .active {
-  background-color: #6759ff;
+  background-color: #333;
   color: #ffffff;
 }
 #products {

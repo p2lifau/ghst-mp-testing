@@ -4,61 +4,92 @@ let products = {
         productName: "White Couch",
         category: "Furniture",
         price: "30",
+        fob: "Brooklyn, New York",
         image: "white-couch.jpeg",
       },
       {
         productName: "Black Couch",
         category: "Furniture",
         price: "49",
+        fob: 'Los Angeles, CA',
         image: "black-couch.jpeg",
       },
       {
         productName: "Red Chair",
         category: "Furniture",
         price: "99",
+        fob: "Oakland, CA",
         image: "red-chair.jpeg",
       },
       {
         productName: "Blue Jeans",
         category: "Clothing",
         price: "29",
+        fob: "Salt Lake City, UT",
         image: "jeans-1.jpeg",
       },
       {
         productName: "Black Jeans",
         category: "Clothing",
         price: "129",
+        fob: "San Fransisco, CA",
         image: "black-jeans.jpeg",
       },
       {
         productName: "Black Jacket",
         category: "Clothing",
         price: "89",
+        fob: "Los Angeles, CA",
         image: "dior-jacket.jpeg",
       },
       {
         productName: "Gucci Glasses",
         category: "Accesories",
         price: "189",
+        fob: "Chicago, IL",
         image: "gucci-glasses.jpeg",
       },
       {
         productName: "Omega Glasses",
         category: "Accesories",
         price: "49",
+        fob: "San Fransisco, CA",
         image: "omega-glasses.jpeg",
       },
       {
         productName: "Prada Glasses",
         category: "Accesories",
         price: "49",
+        fob: "Seattle, WA",
         image: "prada-glasses.jpeg",
       },
       {
         productName: "Oakley Glasses",
         category: "Accesories",
         price: "49",
+        fob: "Seattle, WA",
         image: "oakley-glasses.jpeg",
+      },
+      {
+        productName: "Jean Shorts",
+        category: "Clothing",
+        price: "49",
+        fob: "Seattle, WA",
+        image: "jean-shorts.jpeg",
+      },
+      {
+        productName: "Blow Dryer",
+        category: "Electronics",
+        price: "49",
+        fob: "Seattle, WA",
+        image: "blow-dryer.png",
+      },
+      {
+        productName: "Mascara",
+        category: "Beauty",
+        price: "49",
+        fob: "Seattle, WA",
+        image: "chanel-mascara.png",
       }
     ],
   };
@@ -84,6 +115,11 @@ let products = {
     name.classList.add("product-name");
     name.innerText = i.productName.toUpperCase();
     container.appendChild(name);
+
+    // fob
+    let fob = document.createElement("h6");
+    fob.innerText = "FOB: " + i.fob;
+    container.appendChild(fob);
     //price
     let price = document.createElement("h6");
     price.innerText = "$" + i.price;
